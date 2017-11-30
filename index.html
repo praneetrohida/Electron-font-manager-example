@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+    <script>
+        var fontManager = require("font-manager");
+
+
+        var allFonts = fontManager.getAvailableFontsSync();
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Hello World!</h1>
+    Let's see which fonts we have!
+    <ul>
+        <script>
+            allFonts.map((font, index) => { document.write(`<li>` + font.family + ' ' + font.style + `</li>`) })
+        </script>
+    </ul>
+
+</body>
+
+</html>
